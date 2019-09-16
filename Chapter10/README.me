@@ -21,4 +21,120 @@ This will put std_lib_facilities.h in a location where the compiler will always 
 
 	sudo cp std_lib_facilities.h /usr/local/include 
 
- 
+
+***********************
+	screen
+***********************
+Split Screen
+	[CTRL]-a |
+	[CTRL]-a [TAB]
+	[CTRL]-a c
+
+Switch windows
+
+	[CTRL]-a [TAB]
+
+Close Window
+
+	[CTRL]-a [SHIFT]-x 
+
+
+
+**********************
+	gdb
+**********************
+Make sure to compile programs with the -g flag otherwise gdb will not work. 
+#
+# Open gdb
+#
+
+	gdb myprogram -tui
+
+#
+# Once inside gdb,
+#
+
+Set initial breakpoint
+
+	break main
+
+Run program
+
+	run
+
+Set breakpoint
+
+	break [line number]
+
+delete breakpoint
+
+	clear [line number]
+
+
+#
+# Once gdb hits breakpoint,
+#
+
+Continue on to next breakpoint
+
+	continue
+
+Continue to next line
+
+	next
+
+Step inside function:
+
+	step
+
+Continue to end of scope,
+
+	finish
+
+
+view all variables,
+	
+	info locals
+
+view one variable
+	
+	print [variable name]
+
+
+*********************
+	vim
+********************
+
+Enter insert mode to edit
+
+	i
+
+Exit insert mode for other commands
+
+	[ESC]
+
+Save work
+
+	:w
+
+Compile from inside vim
+
+	:! g++ myprogram.cpp 
+or
+	:make
+
+Exit vim
+	
+	:wq
+
+
+
+
+
+
+
+
+
+
+
+
