@@ -1,0 +1,48 @@
+Fill it the terms as you come across them in your reading. 
+
+bad()
+
+buffer
+
+clear()
+
+close()
+
+device driver
+
+eof()
+
+fail()
+
+file
+
+good()
+
+ifsteam
+
+input device
+
+input operator
+
+iostream
+
+istream
+
+ofstream
+
+open
+
+ostream
+
+output device
+
+output operator
+
+stream state
+
+structured file
+
+terminator
+
+unget()
+

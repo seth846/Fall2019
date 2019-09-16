@@ -1,0 +1,93 @@
+*********************
+Compile Instructions:
+*********************
+Fill in the makefile with the compile compand for the corresponding problem.
+ex.
+
+	Problem1:	Problem1.cpp Problem1.h
+		g++ -std=c++17 -ggdb Problem1.cpp -o Problem1	
+
+Make sure that you use a [TAB] when indenting.
+
+Now you can compile in bash (the terminal) using
+
+	make Problem1
+
+If you are using vim, you can compile from inside vim using
+
+	: make Problem1
+
+*********************
+Assignment Comments
+*********************
+Make sure to use appropriate variable names, and plenty of descriptive comments. 
+
+Push your work to your github fork after each problem is completed or when you need need help. See below for github instructions..
+
+Once you have finished all problems, create a pull-request on the main project page. See below for github instructions. 
+
+
+**********
+Problem 1
+**********
+Write a Progem that produces the sum of all the numbers in a file of whitespace-seperated integers. A simple input file has been provided as problem1.input 
+
+**********
+Problem 2
+**********
+Write a program that creates a file of data in the form of the temperature Reading type defined in §10.5. For testing, fill the file with at least 50 "temperature readings." Call this program store_temps.cpp and the file it creates raw_temps.txt. Try to see if you can make the the output random integers; otherwise any output will be fine.
+
+**********
+Problem 3
+**********
+Write a program that reads the data from raw_temps.txt created in Problem 2 into a vector and then calculates and outputs the average and median temperatures in your data set. Call this program temp_stats.cpp. 
+
+**********
+Problem 4
+**********
+Modify the store_temps.cpp program from Problem2 to include a temperature suffix c for Celsius or f for Fahenheit temperatures. Then modify the temp_stats.cpp program to test each temperature, converting the Celcius readings to Farenheit before putting them into the vector.
+
+**********
+Problem 5
+**********
+Write a program that accepts two file names and produces a new file that is the contents of the first filefollowed by the contents of the second; that is, the program concatinates the two files. Two sample input files have been provided.
+
+**********
+Problem 6
+**********
+Write a program that takes two files containing sorted whitespace-seperated words and merges them, preserving order. Use the sample input files that were used in Problem 5.
+
+
+****************
+Git Instruction
+****************
+
+::Sync Fork::
+Use the following command to keep up to date with any changes I have made to any of the files or folders.
+
+	git pull upstream master
+	
+::Local Commit::
+Save your changes locally using the following commands
+
+	git add -A
+	git commit -m "Finishsed Problem 1"
+	
+::Push to Github::
+Save your changes to your fork online
+
+	git push origin master
+
+::Create Pull-Request::
+Merge your fork with the main project. 
+
+First, sync your fork as described above. 
+Then, go to https://github.com/HomeschoolTech/Fall2019 and click "New pull request"
+
+
+
+
+
+
+
+
