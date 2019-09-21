@@ -1,0 +1,116 @@
+*********
+github
+*********
+
+github is a website where software developers store projects and allow other programmers (or anyone) to actually looks at their code. A program where everyone in the world is able/allowed to see the source code ise called "Open Source"
+
+for example you can look at the entire linux operating system code here https://github.com/torvalds/linux, or for example the source code for the microsoft calculator program here https://github.com/microsoft/calculator
+
+Any project on github you can in theory download and modify yourself. 
+
+A project on github is called a "repository".
+
+Assignments will but turned as modifications to a github repsoitory 
+
+
+***********
+iostream
+***********
+We use IOstream (input output stream) to handle moving files from the hard drive to the main memory (RAM). Hard Drive memory does not get erased when the computer turns off, it is called "non-volatile" memory, RAM gets erased everytime the computer turns off, it is called "Volatile Memory"
+
+An iostream is what handles the input or output 
+
+We can create iostreams by including the file
+	#include <iostream>
+	#include <fstream>
+
+these are already included when we use 
+	#include "std_lib_facilities.h"
+
+
+*********
+  input
+**********
+
+To create an input file stream first we need the name of the file
+
+	string file_name = "NameOfFile.txt";
+
+There are two ways to create an input filestream (ifstream)
+method 1: Create input file stream named ifs, and initialize it with file_name
+
+	ifstream ifs{file_name};
+
+method 2: Ctreate ifstream named ifs, then open given file
+
+	ifstream ifs;
+	ifs.open(file_name);
+
+We can then write to the file like we would output using cin, but using ifs instead
+
+	string input_string;
+	ifs >> input_string;
+
+The file will automatrically close at the end of the Scope in which it was opened(at the end of the corresponding " } ")
+
+We can also close the file manually using
+
+	ifs.close()
+
+***********
+  output
+***********
+
+Output works almost exactly the same way using an output filestream
+
+	string file_name = "Output_file.txt";
+
+	ostream ofs{file_name};
+or
+	ostream ofs;
+	ofs.open(file_name);
+
+The first way is prefered
+
+Write to file
+
+	ofs << "Test output text\n";
+
+Again file will close at end of scope or
+
+	ofs.close()
+
+Letting the file close at end of scope is prefered when possible.
+
+
+***************
+  << and >>
+***************
+
+Start thinking of  << as "the output operator" kind of like + is the "addition operator"
+on one side we have an ofstream and on the otherside we have the date we want to output so we can think ofthe ofstream as simply telling the output operater where the output data goes. 
+
+	my_ofstream << output_data
+
+Similarly >> is "the input operator"
+
+	my_ifstream >> input_data
+
+
+Think of the direction of the arrows as the direction we want the data to go.
+
+*************************
+Check when opening file
+*************************
+
+When we are programming we cannot depend on the user to have files setup the way we expect them. We should always check for errors when opening a file using a try catch block. For now we will use the error function provided in "std_lib_facilites.h". For example see attached file.
+
+
+Possible errors when reading a file could include:
+*) File does not exist 
+*) Do not have permission to read/write to file
+*) File is corrupted 
+*) I/O device is not connected or reading
+*) Many many more
+
+
