@@ -1,11 +1,11 @@
 1. When dealing with input and output, how is the variety of devices dealt with in most modern computers?
-
+device drivers sending the input to I/O librarys
 2. What, fundamentally, does an istream do?
-
+takes input and reads it into the progran
 3. What, funcamentally, does and ostream do?
-
+sends output to a space where it can be used 
 4. What, fundamentally, is a file? 
-
+space where data can be red and written to 
 5. What is a file format?
 
 6. Name four different types of devices that can require I/O for a program?

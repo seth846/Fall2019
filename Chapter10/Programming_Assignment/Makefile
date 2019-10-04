@@ -1,7 +1,5 @@
-all:	
-
 Problem1:	summation.cpp
-
+	g++ summation.cpp -o problem1
 
 Problem2:	store_temps.cpp
 	

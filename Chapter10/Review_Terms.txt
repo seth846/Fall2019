@@ -1,9 +1,9 @@
 Fill it the terms as you come across them in your reading. 
 
 bad()
-
+something unexpected that is able to be recovered from
 buffer
-
+the place where input and output go before they are used
 clear()
 
 close()
@@ -11,9 +11,9 @@ close()
 device driver
 
 eof()
-
+the error thrown when the end of an input file is reached
 fail()
-
+something that is unable to be recovered from
 file
 
 good()
