@@ -1,0 +1,96 @@
+*********************
+Compile Instructions:
+*********************
+Fill in the makefile with the compile compand for the corresponding problem.
+ex.
+
+	Problem1:	Problem1.cpp Problem1.h
+		g++ -std=c++17 -g Problem1.cpp -o Problem1	
+
+Make sure that you use a [TAB] when indenting.
+
+Now you can compile in bash (the terminal) using
+
+	make Problem1
+
+If you are using vim, you can compile from inside vim using
+
+	: make Problem1
+
+*********************
+Assignment Comments
+*********************
+Make sure to use appropriate variable names, and plenty of descriptive comments. 
+
+Push your work to your github fork after each problem is completed or when you need need help. See below for github instructions..
+
+Once you have finished all problems, create a pull-request on the main project page. See below for github instructions. 
+
+****************
+Git Instruction
+****************
+
+::Sync Fork::
+Use the following command to keep up to date with any changes I have made to any of the files or folders.
+
+	git pull upstream master
+	
+::Local Commit::
+Save your changes locally using the following commands
+
+	git add -A
+	git commit -m "Finishsed Problem 1"
+	
+::Push to Github::
+Save your changes to your fork online
+
+First make sure to commit changes locally, then
+
+	git push origin master
+
+::Create Pull-Request::
+Merge your fork with the main project. 
+
+First, sync your fork as described above. 
+Make sure you have pushed all recent changes online.
+Then, go to https://github.com/HomeschoolTech/Fall2019 and click "New pull request"
+
+
+**********
+Problem 1
+**********
+Write a program that removes all vowels from a given file (i.e. the input and output file are the same).
+  
+**********
+Problem 2
+**********
+Write a function vector<srting> split(const string& s) that returns a vector of white-space seperated substrins from the argument s. (i.e. split the string into different words, and split at any whitespace)
+
+**********
+Problem 3
+**********
+Write a function vector<string> split(const string& s, const string& w) that returns a string of whitespace-seperated substrings from the argument s, where whitespace is defined as "ordinary whitespace" plus the characters in w.
+
+**********
+Problem 4
+**********
+Reverse the order of characters in a given text file (again input and output file should be the same). For example "Norwegian Blue parrot" becomes "torrap eulB naigewoN"
+
+**********
+Problem 5
+**********
+Reverse the order of words (defined as whitespace-seperated strings) in a file. For example, "Norwegian Blue parrot" becomes "parrot Blue Norwegian". Again, input and output file are the same. 
+
+**********
+Problem 6
+**********
+Write a program that reads a file of whitespace-seperated numbers and outputs a file of numbers using scientific format and precission 8 in four fields of 20 characters per line.
+
+
+
+
+
+
+
+
+

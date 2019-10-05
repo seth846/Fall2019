@@ -1,0 +1,87 @@
+*********************
+Compile Instructions:
+*********************
+Fill in the makefile with the compile compand for the corresponding problem.
+For example:
+
+	Drill:		Drill.cpp Drill.h
+		g++ -std=c++17 -g Drill.cpp -o Drill	
+
+Make sure that you use a [TAB] when indenting.
+
+Now you can compile in bash (the terminal) using
+
+	make Drill
+
+If you are using vim, you can compile from inside vim using
+
+	: make Drill
+
+*********************
+Assignment Comments
+*********************
+Make sure to use appropriate variable names, and plenty of descriptive comments. 
+
+Push your work to your github fork after you have complete the drill. See below for github instructions..
+
+***********************
+	Drill
+***********************
+These is copied from the end of Chapter 11
+
+1. Start a program called Test_output.cpp. Declare an integer year and assign it a random year. 
+
+2. Output year in decimal, octal, and hexidecimal form.
+
+3. Label each value with the name of the base used.
+
+4. Did you lie up your output in the columns using the tab character? If not, do it now.
+
+5. Now output the number 45.
+
+6. Was there a problem? What happened? Fix your output to decimal.
+
+7. Go back to 2 and cause your output to show the base for each output (eg. 0x32, 022)
+
+8. Try reading as octal, hexidecimal, etc:
+		
+	cin >> a >> oct >> b >> hex >>c >>d;
+	cout << a << '\t' << b << '\t' << c << '\t' << d << endl;
+   
+   Run this code with the input: 1234 1234 1234 1234 
+   Can you explain the results?
+
+9.  Write some gode to print the nubmer 1234567.89 three times, first using defaultfloat, then fixed, then scientific forms. Which output form psents the user with the most accurate representation? Why?
+
+10. Make a simple table including (made up) lastnames, firstnames, phone number and email of at least five (made up) people. Experiment with different field widths until you are satisfied that the output looks cleanly formated.
+
+
+****************
+Git Instruction
+****************
+
+::Sync Fork::
+Use the following command to keep up to date with any changes I have made to any of the files or folders.
+
+	git pull upstream master
+	
+::Local Commit::
+Save your changes locally using the following commands
+
+	git add -A
+	git commit -m "Finishsed Drill"
+	
+::Push to Github::
+Save your changes to your fork online
+
+	git push origin master
+
+::Create Pull-Request::
+Merge your fork with the main project. 
+
+First, sync your fork as described above. 
+Then, go to https://github.com/HomeschoolTech/Fall2019 and click "New pull request"
+
+
+
+
