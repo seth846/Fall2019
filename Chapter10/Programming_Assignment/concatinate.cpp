@@ -23,3 +23,4 @@ catch(...){
 	cerr << "Error: Unknown Exception!" << endl;
 	return 2;
 }
+//switched with summation
