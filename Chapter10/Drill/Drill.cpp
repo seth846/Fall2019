@@ -9,7 +9,7 @@ try{
 	int y;
 	vector <Point> original_point;	
 	cout << "enter 7 (x, y) points: ";
-	while(original_point.size() <= 6){    //input points into original_points until it has 7 inputs  
+	while(original_point.size() < 7){    //input points into original_points until it has 7 inputs  
 		cin >> x >> y;
 		original_point.push_back(Point{x,y});
 	}
@@ -18,9 +18,10 @@ try{
 	cin >> iname;						// recieve name of file to be used
 	ofstream ost{iname};
   	if(!ost) error("can't open mydata.txt");	
-	for(int i = 0; i <= original_point.size();++i){
-		ost << original_point[i].x << original_point[i].y <<'\n'; //output data to file
-	}										
+	for(int i = 0; i < original_point.size();++i){
+		ost << original_point[i].x << ' ' << original_point[i].y <<'\n'; //output data to file
+	}
+	ost.close();	
 	ifstream ist{iname};
 	if(!ist)error("can't open input file mydata.txt");  
 	vector <Point> processed_points;

@@ -1,48 +1,48 @@
 Fill it the terms as you come across them in your reading. 
 
 bad()
-something unexpected that is able to be recovered from
+something that is unable to be recovered from
 buffer
 the place where input and output go before they are used
 clear()
-
+takes the filestream out of fail() state
 close()
-
+closes a filestream
 device driver
-
+converts input into something the computer can read
 eof()
 the error thrown when the end of an input file is reached
 fail()
-something that is unable to be recovered from
+something bad that can be recovered from 
 file
-
+a sequence of bytes
 good()
-
+the state of the filestream when everything works well
 ifsteam
-
+an istream used to read from a file
 input device
-
+anything that the computer cab recieve input from
 input operator
-
+>>
 iostream
-
+used for reading and writing
 istream
-
+takes a stream of bytes and composes objects from them
 ofstream
-
+used for writing to a file
 open
-
+used to open an iostream
 ostream
-
+coverts objects into streams of bytes
 output device
-
+the way the output is shown 
 output operator
-
+<<
 stream state
-
+good(), bad(), eof(), fail()
 structured file
-
+a file which as a standard repeatable pattern
 terminator
-
+a statement which terminates the iostream
 unget()
-
+puts the input back 

@@ -1,0 +1,37 @@
+For each of the following terms, explain either what the term means or is used for (only one)
+
+1. binary
+
+2. character classification
+
+3. decimal
+
+4. defaultfloat
+
+5. file positioning
+
+6. fixed
+
+7. hexadecimal
+
+8. irregularity
+
+9. line-oriented input
+
+10. manipulator
+
+11. nonstandard seperator
+
+12. noshowbase
+
+13. octal
+
+14. output formatting
+
+15. regularity
+
+16. scientific formatting
+
+17. setorecision()
+
+18. showbase
