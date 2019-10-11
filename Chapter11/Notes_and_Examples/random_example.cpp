@@ -12,4 +12,11 @@ int main(){
 
 	int better_var = rand();  // rand was seeded, Will be different everytime.	
 	cout << "better_var = " << better_var << endl;
+
+	// The random number is usually very big. 
+	// If we want number in between [0, randMax] use modulo
+	
+	int randMax = 1000;
+	
+	int smaller_var = rand() % randMax; // in range [0, randmax]
 }
