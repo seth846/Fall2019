@@ -4,6 +4,9 @@
 
 using namespace std;
 
+// This file implements the as_bytes function described in the textbook.
+// We can use this file to read in the programs own binary. We can use the program to read itself
+
 template<class T>
 char* as_bytes(T& i){
 	void* addr = &i;
@@ -11,15 +14,17 @@ char* as_bytes(T& i){
 }
 
 int main(){
-	string name;
+
+	string file_name;
 	
-	cin >> name;
+	cin >> file_name; // Use name of compiled file
 
-	ifstream ifs {name, ios_base::binary};
-	if(!ifs) return -1;
+	// open file in binary mode
+	ifstream ifs {file_name, ios_base::binary};
+	if(!ifs) return -1; // exit program if doesn't open
 
-	for(int x; ifs.read(as_bytes(x), sizeof(char)); )
+	// Read in 1 byte at a time, convert to char and print
+	for(char x; ifs.read(as_bytes(x), sizeof(char)); )
 		cout << x;
 
-	return 0;
-}
+} // ifs goes out of scope so it closes
