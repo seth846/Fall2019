@@ -23,7 +23,7 @@ istream& operator>>(istream& is, Reading& R){	//create input operator for Readin
 		temperature*=1.8;
 		temperature+=32;
 	}
-	R = Reading{hour, temperature};
+	R = Reading{hour, temperature};		//update R
 	return is;
 }
 int main()
@@ -40,12 +40,13 @@ try{
 	while(ist >> R){			//recieve file input	
 		temps.push_back(R);
 	}
+	//i think the error is here 
 	for(int i = 0; i < temps.size(); ++i){		//add all hours and temperatures from file together
 		avrhour += temps[i].hour;
 		avrtemp += temps[i].temperature;
 	}	
 	cout << avrhour << ',' << avrtemp << ',' 				//print the averages
-	<< temps[temps.size()/2].hour << temps[temps.size()/2].temperature;	//print the median of the file
+	<< temps[temps.size()/2].hour << temps[temps.size()/2].temperature;	//calculate and print the median of the file
 	return 0;		
 }
 catch(exception& e){
