@@ -18,8 +18,8 @@ try{
 	if(!ost) error("can't open file ", oname);
 	vector <Reading> data;
 	for( int i =0; i < 55; ++i){			//fill vector data with members of Reading
-		hour = rand();
-		temp = rand();
+		hour = rand()% 200; 
+		temp = rand()% 200;
 		data.push_back(Reading{hour, temp});
 	}
 	for(int i = 0; i < data.size(); ++i){		//print all members of data  
