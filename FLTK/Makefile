@@ -24,15 +24,14 @@ MyFLTK:	Graph.o GUI.o Window.o
 	ar rsc libMyFLTK.a ./*.o 
 	
 install: libMyFLTK.a 
-	mkdir -p $(INCLUDE_PATH)
-	mkdir -p $(LIB_PATH)
-	mv libMyFLTK.a $(LIB_PATH)
-	cp $(INCLUDE)/* $(INCLUDE_PATH)
+	sudo su -c 'mkdir -p $(INCLUDE_PATH) && \
+	mkdir -p $(LIB_PATH)		&& \
+	mv libMyFLTK.a $(LIB_PATH)	&& \
+	cp $(INCLUDE)/* $(INCLUDE_PATH)'
 	rm *.o
+	echo "export LIBRARY_PATH=/usr/local/lib:${LIBRARY_PATH}" >> ~/.bash_profile
+	. ~/.bash_profile
 
 uninstall: 
 	rm -f $(LIB_PATH)/libMyFLTK.a
 	rm -rf $(INCLUDE_PATH)
-	echo 'export LIBRARY_PATH=/usr/local/lib:$LIBRARY_PATH' >> ~/.bash_profile
-	. ~/.bash_profile
-	. ~/.profile
