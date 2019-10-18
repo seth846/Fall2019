@@ -1,0 +1,6 @@
+# This is a comment
+
+# * is a "wildcard" this means fill in with anything that matches this pattern
+*.out
+
+
