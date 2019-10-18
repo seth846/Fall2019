@@ -11,7 +11,6 @@ int main(){
 	string title = "Canvas";
 
 	Simple_window win{top_left, width, height, title};
-/*
 	Polygon poly;
 
 	poly.add(Point{300, 200});
@@ -19,13 +18,11 @@ int main(){
 	poly.add(Point{400, 200});
 
 	poly.set_color(Color::red);
-*/
 	win.attach(poly);
 
 	win.wait_for_button();
 
 	// 12.7.3
-/*
 	Axis xa{Axis::x, Point{20, 300}, 280, 10, "x axis"};
 
 	win.attach(xa);
@@ -38,9 +35,7 @@ int main(){
 	win.attach(ya);
 	win.set_label("Canval #3");
 	win.wait_for_button();
-*/
-	// 12.7.4
-/*
+	
 	double a = 0, b = 100;
 	top_left = Point{20, 150};
 	int Npts = 1000;
@@ -52,6 +47,5 @@ int main(){
 	win.set_label("Canvas #4");
 	win.wait_for_button();
 
-*/
 	return 0;
 }
