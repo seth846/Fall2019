@@ -1,30 +1,42 @@
 #include "std_lib_facilities.h" 
 
-struct Reading{			//create struct Reading	//srand(time(nullptr));
+struct Reading{			//create struct Reading	
 	int hour; 
 	int temp;
 };
+
 int main()
 try{
-	int hour;
-	int temp;
+	// get file "oname"
 	string oname;
-	cout << "enter name of file: ";        // get file "oname"
+	cout << "enter name of file: ";        
 	cin >> oname;
-	cout << "please enter units(celsius/fareinheit): ";	//get units
+
+	//get units
+	cout << "please enter units(celsius/fareinheit): ";	
 	string units;						
 	cin >> units;
+
 	ofstream ost(oname);
 	if(!ost) error("can't open file ", oname);
+
+	srand(time(nullptr));
+
+	//fill vector data with members of Reading
 	vector <Reading> data;
-	for( int i =0; i < 55; ++i){			//fill vector data with members of Reading
+	int hour, temp;
+	for( int i = 0; i < 55; ++i){			
 		hour = rand()% 200; 
 		temp = rand()% 200;
 		data.push_back(Reading{hour, temp});
 	}
-	for(int i = 0; i < data.size(); ++i){		//print all members of data  
-		if(units == "celsius") ost << '(' << data[i].hour << ", " << data[i].temp << "c)\t";  //print celsius
-		else ost << '(' << data[i].hour << ", " << data[i].temp << "f)\t";		//print farenheit
+
+	//print all members of data  
+	for(int i = 0; i < data.size(); ++i){		
+		if(units == "celsius")
+			ost << '(' << data[i].hour << ", " << data[i].temp << "c)\t";  //print celsius
+		else
+			ost << '(' << data[i].hour << ", " << data[i].temp << "f)\t";  //print farenheit
 	}
 }
 catch(exception& e){
