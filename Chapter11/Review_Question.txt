@@ -1,36 +1,37 @@
 1. Why is I/O so tricky for a programmer?
-
+because you have to account for user error, invalid input, and different operating systems
 2. What does the notation << hex do?
-
+prints the numbers in hexidecimal form
 3. What are hexidecimal numbers used for in computer science?
-
+as a easier way of reading binary numbers
 4. Name some of the options you may want to implement for formatting integer output?
-
+a fixed number of decimal places, scientific, for numbers larger than 100,000, the base to be shown if using multiple bases
 5. What is a manipulator?
-
+a term that changes the result of a stream to a specialized format
 6. What is the prefix for decimal? For octal? For hexidecimal?
-
+dec, oct, hex
 7. What is the default output format for floating -point values?
-
+the best aproximation to six digits with 5-9 rounding up
 8. What is a field?
-
+the amount of space an integer takes up
 9. Explain wat setprecision() and setw() do?
-
+setprecision() sets the precision of a decimal number to a specified number of points
+setw() sets the field width to  specified number of spaces
 10. What is the purpose of file open modes?
-
+to change how the file is used and not always erased when writing to
 11. Which of the following manipulators does not 'stick': hex scientific, setprecision(), showbase, setw?
-
+setw()
 12. What is the difference between character I/O and binary I/O?
-
+binary is more compact and more error prone
 13. Give an example of when it would probably be benificial to use a binary file instead of a text file?
-
+for a soundfile or photograph
 14. Give two examples where stringstream can be useful.
-
+to seperate I/O from processing, to filter undesireable charaacters out of input
 15. What is a file position?
-
+the space in the file where the program is reading or writing
 16. What happens if you position a file position beyond the end of a file?
-
+it depends on the system 
 17. When would you prefer line-oriented input to type-specific input?
-
+when a newline is different from whitespace
 18. What does isalnum(c) do?
-
+checks if the input is a letter or a decimal digit
