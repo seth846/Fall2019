@@ -1,0 +1,38 @@
+# Make sure you are on branch chapter12 before editing
+
+0) What is FLTK?
+
+1) What is a code library? (https://www.learncpp.com/cpp-tutorial/a1-static-and-dynamic-libraries/)
+
+2) What is a static library? (same link as above)
+
+3) What is the file extension of a library (static and shared, see link)?
+
+4) Look in FLTK/Makefile; Where did it put this library?
+
+5) Look in FLTK/Makefile; Where did it put the header files?
+
+6) Look at the Makefile in FLTK/example. How do we compile with a library?
+
+7) What is the difference between a graphics library (like FLTK) and HTML?
+
+8) What does HTML stand for?
+
+9) Is HTML a programming language? (may need to google)
+
+10) What is TeX? (may need to google)
+
+11) What is a GUI?
+
+12) What is an enum class? 
+
+13) What is the difference between a class and a struct?
+
+14) What are the two parts of a class?
+
+15) What is a constructor?
+
+16) How do we access members of a class?
+
+17) What is a namespace? 
+
