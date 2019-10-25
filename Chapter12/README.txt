@@ -42,7 +42,6 @@ If it gives you an error about needing to commit or stash changes you have two o
 
 ** Synchronizing with upstream
 First you will sync your master branch,
-then merge these changes into your other branches
 
 	# Go to master branch
 	git checkout master
@@ -50,7 +49,9 @@ then merge these changes into your other branches
 	# Get all updates
 	git pull upstream/master master
 
-	# Now need to merge changes on individual branches
+"If needed" (it shouldn't be needed very often) merge master updates into branch
+
+	# go to branch_name
 	git checkout branch_name
 
 	# Merge changes from master into branch_name
