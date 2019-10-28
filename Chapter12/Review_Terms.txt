@@ -1,38 +1,38 @@
 # Make sure you are on branch chapter12 before editing
 
 0) What is FLTK?
-
+a GUI toolkit 
 1) What is a code library? (https://www.learncpp.com/cpp-tutorial/a1-static-and-dynamic-libraries/)
-
+ a precompiled package of code that is meant to be used by other programs and is generally split into two parts: a header file and the binary implementation
 2) What is a static library? (same link as above)
-
+a library of code that is compiled and linked with your program and is accessed through the executable
 3) What is the file extension of a library (static and shared, see link)?
-
+the header file or implementation file
 4) Look in FLTK/Makefile; Where did it put this library?
-
+in user/local
 5) Look in FLTK/Makefile; Where did it put the header files?
-
+in MyFLTK
 6) Look at the Makefile in FLTK/example. How do we compile with a library?
-
+lbMyFLTK.a
 7) What is the difference between a graphics library (like FLTK) and HTML?
-
+html deals with text while FLTK can use shapes and text
 8) What does HTML stand for?
-
+hypertext markup language
 9) Is HTML a programming language? (may need to google)
-
+no, its just a method of adding context and structure to text
 10) What is TeX? (may need to google)
-
+a formatting system used for text documents
 11) What is a GUI?
-
+a space where the user can interact with the code(graphical user interface)
 12) What is an enum class? 
-
+give a group of symbolic constants values with default starting at 0 and increasing by one for each value
 13) What is the difference between a class and a struct?
-
+a class has a public and private section and supports subclasses but a struct does not
 14) What are the two parts of a class?
-
+public and private
 15) What is a constructor?
-
+a member function with the same name as its class
 16) How do we access members of a class?
-
+through user defined member functions
 17) What is a namespace? 
-
+ group of declarations to classes, libraries, and header files
