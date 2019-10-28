@@ -18,7 +18,7 @@ try{
 		word = file[i];
 		for(int n = 0; n < word.size(); ++i){
 			if(word[n] == 'a' || word[n] == 'e'|| word[n] == 'i'||word[n] == 'o'||word[n] == 'u'){
-				delete[word[n]];	
+				delete(word[n]);	
 			}
 			else;	
 		}
