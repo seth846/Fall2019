@@ -1,9 +1,9 @@
 #include "std_lib_facilities.h"
 
 vector<string> split(const string& s){			
-	vector <string> seperate;		
+	vector <string> seperate;
+	string t = "";	
 	for(int i = 0; i < s.size(); ++i){		//seperate 's' at whitespace
-		string t;
 		if(s[i] == ' '){			//if whitespace put 't' in vector
 			seperate.push_back(t);
 			t = "";

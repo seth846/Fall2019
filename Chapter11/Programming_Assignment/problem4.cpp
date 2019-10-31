@@ -1,15 +1,11 @@
 #include "std_lib_facilities.h"
-
+#include <sstream>
 string reverse(string s){			//reverse the characters in a string
-	vector <string> reverse;
-	string reversed_w;
-	for(int i = 0; i < s.size(); ++i){	//add each char in 's' to the front of 'reverse'
-		reverse.push_front(s[i]);
+	ostringstream reversed_w {""};
+	for(int i = s.size() - 1; i >= 0; --i){	//add each char in 's' to the front of 'reverse'
+		reversed_w << s[i];
 	}
-	for(int i = 0; i < reverse.size(); ++i){	//add each member of 'reverse' to 'reversed_w'
-		reversed_w += reverse[i];
-	}
-	return reversed_w;
+	return reversed_w.str();
 }
 
 int main()
@@ -19,15 +15,13 @@ try{							//get input file
 	cin >> iname;
 	ifstream ifs(iname);				
 	if(!ifs) error("can't open file ", iname);
-	string word;
-	while(ifs){					//get input
-		ifs >> word;
-		word += " ";
+	ostringstream word{""};
+	for(string input; ifs >> input;){		//get input
+		word << input << " ";
 	}
-	word = reverse(word);				//reverse 'word'
 	ofstream ofs(iname);				//open output file
 	if(!ofs) error("can't open file ", iname);
-	ofs << word;					//output 'word'	
+	ofs << reverse(word.str());					//output 'word'	
 	return 0;		
 }
 catch(exception& e){

@@ -2,8 +2,8 @@
 
 vector<string> split(const string& s, const string& w){		//split 's' at whitespace and all chars in 'w'
 	vector <string> seperate;
+	string t = "";
 	for(int i = 0; i < s.size(); ++i){
-		string t;
 		if(s[i] == ' '){				//check if whitespace
 			seperate.push_back(t);			
 			t = "";					//clear 't'
