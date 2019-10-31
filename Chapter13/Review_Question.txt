@@ -1,0 +1,40 @@
+
+1) Why does this book not just use a commercial or open-source graphics library directly? (i.e. why did they make their own "wrappers" to the library?)
+
+2) What are the header files needed to use our graphics interface library?
+
+3) What classes define closed shapes?
+
+4) Why don't we just use Line for every shape?
+
+5) What is the difference between the Line and Lines objects?
+
+6) What Properties can you set for every Shape?
+
+7) How many sides does a Closed_polyline difined by five points have?
+
+8) which appears on top of the other: fill or outline?
+
+9) What do you see if you define a Shape but don't attach it to a Window?
+
+10) How does a Rectangle differ from a Polygon with four Points?
+
+11) How does a Polygon differ from a Closed Polygon?
+
+12) Why didn't the book bother defining a Triangle class like they did for rectangle?
+
+13) How do you move a Shape to another place in a Window?
+
+14) How do you label a Shape with a line of text?
+
+15) What properties can you set for a text string in a Text object?
+
+16) What is a font?
+
+17) What is Vector_ref and how do we use it?
+
+18) What is the difference between the Circle class and the Ellipse class?
+
+19) What happens if you try to display an Image fiven a filename that doesn't refer to a file containing an image?
+
+20) How to you display part of an image?

@@ -1,0 +1,29 @@
+Define each of the following terms in context of the graphics library (i.e. what is it and what does it represent)
+
+1) closed shape
+
+2) fill
+
+3) front
+
+4) invisible
+
+5) line
+
+6) line style
+
+7) open shape
+
+8) polygon
+
+9) polyline
+
+10) unnamed object
+
+11) Vector_ref
+
+12) visible
+
+13) What is an image encoding? 
+
+14) Give two types of image encoding?
