@@ -1,40 +1,41 @@
 
 1) Why does this book not just use a commercial or open-source graphics library directly? (i.e. why did they make their own "wrappers" to the library?)
-
+so they could streamline, customize, and make every function have the same parameter order
 2) What are the header files needed to use our graphics interface library?
-
+graph.h namespace Graph_lib
 3) What classes define closed shapes?
-
+Closed_polyline, Polygon, Rectangle, Circle, Ellipse
 4) Why don't we just use Line for every shape?
-
+because that would take longer to type and would look messier
 5) What is the difference between the Line and Lines objects?
-
+a Line draws and changes one line at a time, Lines can draw and change multiple lines at a time
 6) What Properties can you set for every Shape?
-
+set_color, set_line_style, set_fill_color
 7) How many sides does a Closed_polyline difined by five points have?
-
+5
 8) which appears on top of the other: fill or outline?
-
+outline
 9) What do you see if you define a Shape but don't attach it to a Window?
-
+nothing
 10) How does a Rectangle differ from a Polygon with four Points?
-
+the rectangle's opposite sides are congruent and parallel
 11) How does a Polygon differ from a Closed Polygon?
-
+a Polygon's lines cannot cross while a Closed_polyline's lines are allpwed to cross
 12) Why didn't the book bother defining a Triangle class like they did for rectangle?
-
+because a polygon with three points is less common and easier to form
 13) How do you move a Shape to another place in a Window?
-
+Shape.move(Point{x,y});
 14) How do you label a Shape with a line of text?
-
+place a text object at the point in the middle of the shape
 15) What properties can you set for a text string in a Text object?
-
+color, font, and size
 16) What is a font?
-
+how the text appears on the screen
 17) What is Vector_ref and how do we use it?
-
+a vector filled with unamed objects, by iterating through and naming it's objects
 18) What is the difference between the Circle class and the Ellipse class?
-
+the Circle is an ellipse with the x_axis and y_axis equivalent
 19) What happens if you try to display an Image fiven a filename that doesn't refer to a file containing an image?
-
+a box with an x inside will appear with an error message where the image belongs
 20) How to you display part of an image?
+image.mask(Point{x,y},length,width)

@@ -1,29 +1,30 @@
 Define each of the following terms in context of the graphics library (i.e. what is it and what does it represent)
 
 1) closed shape
-
+a shape with all lines connected
 2) fill
-
-3) front
-
+fill the area inside a shape with color
+3) font
+how the text appears on the screen
 4) invisible
-
+is there but cannot be seen
 5) line
-
+the object drawn that connects 2 point
 6) line style
-
+how the line appears
 7) open shape
-
+a shape with a disconnect between the lines
 8) polygon
-
+a closed shape where non of the lines cross
 9) polyline
-
+a set of lines connected end to end
 10) unnamed object
-
+an object of a specified type but no name
 11) Vector_ref
-
+a vector that can hold unamed objects
 12) visible
-
+is there and can be seen
 13) What is an image encoding? 
-
+how the image is convert to computer readable form
 14) Give two types of image encoding?
+JPEG, GIF
