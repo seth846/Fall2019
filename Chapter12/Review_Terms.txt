@@ -13,9 +13,9 @@ in user/local
 5) Look in FLTK/Makefile; Where did it put the header files?
 in MyFLTK
 6) Look at the Makefile in FLTK/example. How do we compile with a library?
-lbMyFLTK.a
+g++ example.cpp -o example -lMyFLTK -lfltk -lfltk_images
 7) What is the difference between a graphics library (like FLTK) and HTML?
-html deals with text while FLTK can use shapes and text
+HTML simply formats text and images while FLTK actually draws objects on the screen
 8) What does HTML stand for?
 hypertext markup language
 9) Is HTML a programming language? (may need to google)
