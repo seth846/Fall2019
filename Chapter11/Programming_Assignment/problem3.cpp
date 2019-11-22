@@ -23,21 +23,17 @@ vector<string> split(const string& s, const string& w){		//split 's' at whitespa
 
 int main()
 try{
-	cout << "enter words you want(0 terminates): ";
+	cout << "enter words you want: ";
 	string words;
-	while(cin){
-		string w;
-		cin >> w;
-		if(w == "0") break;
-		words += w;
-		words += " ";
-	}
+	getline(cin, words);
 	string whitespace;
 	cout << "what is 'whitespace'(no whitespace in answer): ";
 	cin >> whitespace;
 	vector <string> result;
 	result = split(words, whitespace);
-	for(int i = 0; i < result.size(); ++i){ cout << result[i];}
+	for(auto& w : result){
+		cout << w << " ";
+	}
 	return 0;		
 }
 catch(exception& e){

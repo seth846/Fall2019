@@ -4,7 +4,7 @@ vector<string> split(const string& s){
 	vector <string> seperate;
 	string t = "";	
 	for(int i = 0; i < s.size(); ++i){		//seperate 's' at whitespace
-		if(s[i] == ' '){			//if whitespace put 't' in vector
+		if(s[i] == ' '||s[i] == '\n'){			//if whitespace put 't' in vector
 			seperate.push_back(t);
 			t = "";
 		}
@@ -15,19 +15,14 @@ vector<string> split(const string& s){
 
 int main()
 try{
-	cout << "enter words you want(0 terminates): ";
+	cout << "enter words you want: ";
 	string words;
-	while(cin){				//get input
-		string w;
-		cin >> w;
-		if(w == "0") break;
-		words += w;
-		words += " ";
-	}
+	getline(cin, words);
 	vector <string> result;			//split 'words' at each whitespace and add to result
 	result = split(words);
-	for(int i = 0; i < result.size(); ++i){
-	       	cout << result[i] << " ";}
+	for(auto& w : result){       	
+	cout << w << " ";
+	}
 	return 0;		
 }
 catch(exception& e){

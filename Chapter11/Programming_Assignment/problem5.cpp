@@ -1,28 +1,25 @@
 #include "std_lib_facilities.h"
 
 vector <string> split(const string& s){			//split a string at whitespace
-               vector <string> seperate;
-	for(int i = 0; i < s.size(); ++i){		
-        	string t;
-		if(s[i] == ' '){			//check for whitespace
+	vector <string> seperate;
+	string t = "";
+	for(char c : s){		
+        	if(c == ' '){			//check for whitespace
 			seperate.push_back(t);		//push back 't'
 			t = "";				//clear 't'
 		}	
-        	else t += s[i];				//otherwise add non-whitespace character to 't'
+        	else t += c;				//otherwise add non-whitespace character to 't'
         }
         return seperate;
 }
 string reverse(string s){		//reverse the order of words in a string
 	vector <string> reverse;
-	string reversed_w;
+	ostringstream reversed_w {""};
 	reverse = split(s);				//split 's' at whitespace
-	for(int i = 0; i < reverse.size(); ++i){
-		reverse.push_front(reverse[i]);		//swap the order of all words in 'reverse'
+	for(int i = reverse.size()-1; i>=0;  --i){
+		reversed_w << reverse[i] << " ";		//swap the order of all words in 'reverse'
 	}
-	for(int i = 0; i < reverse.size(); ++i){	//add each element in 'reverse' to 'reversed_w'
-		reversed_w += reverse[i];
-	}
-	return reversed_w;
+	return reversed_w.str();
 }
 
 int main()
@@ -32,15 +29,17 @@ try{
 	cin >> iname;
 	ifstream ifs(iname);
 	if(!ifs) error("can't open file ", iname);
-	string word;					//get input
-	while(ifs){
-		ifs >> word;
-		word += " ";
+	ostringstream oss{""};
+	for(string input; ifs >> input;){
+		oss << input << " ";
 	}			
-	word = reverse(word);				//reverse 'word'
+	string word = reverse(oss.str());	//reverse 'word'
+	ifs.close();
 	ofstream ofs(iname);				//output 'word'
 	if(!ofs) error("can't open file ", iname);
-	ofs << word;
+	for(char c : word){
+		ofs << c;
+	}
 	return 0;		
 }
 catch(exception& e){
