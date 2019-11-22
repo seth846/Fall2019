@@ -1,0 +1,37 @@
+1) What is an Application Domain
+
+2) What are the goals for nameing objects?
+
+3) How does and Abstract class differ from a non-abstract class?
+
+4) How can you make a class abstract?
+
+5) What is being contrelled when we refer to access control?
+
+6) What is the benefit of making data members private?
+
+7) What is a virtual function and how does it differ from a non-virtual function.
+
+8) What is a base class?
+
+9) What makes a class a derived class?
+
+10) What can you do to make a class easier to test?
+
+11) What is an inheritance diagram?
+
+12) What is the difference between a protected and private memeber?
+
+13) What members of a class can be accessed from a class derived form it?
+
+14) How does a pure virtual function differ from other virtual functions?
+
+15) How would you make a member virtual?
+
+16) How would you make a virtual funciton pure?
+
+17) What does overriding mean?
+
+18) How does interface inheritance differ from implementation inheritance?
+
+19) What is object oriented programming?

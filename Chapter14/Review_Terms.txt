@@ -1,0 +1,41 @@
+Describe each term as best as you can
+
+1) Abstract Class
+
+2) Access Controll
+
+3) Base Class
+
+4) Derived Class
+
+5) Dispatch
+
+6) Encapsulation
+
+7) Inheritance 
+
+8) Mutability 
+
+9) Object layout
+
+10) Object oriented override
+
+11) Polymorphism
+
+12) Private
+
+13) Protected
+
+14) Public
+
+15) Pure virtual function
+
+16) Subclass
+
+17) Superclass
+
+18) Virtual Function
+
+19) Virtual Function Call
+
+20) Virtual Function Table

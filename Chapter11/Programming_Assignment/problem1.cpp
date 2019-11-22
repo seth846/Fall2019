@@ -1,5 +1,8 @@
 #include "std_lib_facilities.h"
-
+bool isvowel(char c){
+	        if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') return true;
+		        else return false;
+}
 int main()
 try{
 	vector <string> file;
@@ -8,29 +11,25 @@ try{
 	cin >> iname;
 	ifstream ifs(iname);
 	if(!ifs) error("can't open file ", iname);
-	while(ifs){
-		string word;
-		ifs >> word;
+	for(string word; ifs >> word;){
 		file.push_back(word);
 	}
-	for(int i = 0; i < file.size(); ++i){
-		string word;
-		word = file[i];
-		for(int n = 0; n < word.size(); ++i){
-			if(word[n] == 'a' || word[n] == 'e'|| word[n] == 'i'||word[n] == 'o'||word[n] == 'u'){
-				delete[word[n]];	
-			}
-			else;	
+	ostringstream output{};
+	for(string& word : file){
+		for(char c : word){
+			if(!isvowel(c)) output << c;
 		}
+		output << " ";
 	}
-
-	return 0;		
+	ofstream ofs(iname);
+	ofs << output.str();
+	return 0;
 }
 catch(exception& e){
-        cerr << e.what() << endl;
-	return 1;
+	        cerr << e.what() << endl;
+		        return 1;
 }
 catch(...){
-	cerr << "Error: Unknown Exception!" << endl;
-	return 2;
+	        cerr << "Error: Unknown Exception!" << endl;
+		        return 2;
 }
