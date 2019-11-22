@@ -1,37 +1,38 @@
 For each of the following terms, explain either what the term means or is used for (only one)
 
 1. binary
-
+the representation of numbers using base 2
 2. character classification
-
+checks that can be performed on input to determine what the input is
 3. decimal
-
+the representation of numbers using base 10
 4. defaultfloat
-
+default output form of a floating point number(generally presicion 6)
 5. file positioning
-
+the place in the file where the reading and writing is taking place
 6. fixed
-
+a programmer specified presicion for floating point numbers
 7. hexadecimal
-
+the representation of numers using base 16
 8. irregularity
-
+the way input and output actually works
 9. line-oriented input
-
+reading in a line at a time instead of one word at a time
 10. manipulator
-
+a device that changes the form of input or output
 11. nonstandard seperator
-
+using something other than whitespace to seperate words
 12. noshowbase
-
+reverses the action of showbase showing output numbers without prefix
 13. octal
-
+the representation of numbers using base 8
 14. output formatting
-
+how the result is shown as output
 15. regularity
-
+a standard way of treating input and output
 16. scientific formatting
-
+the way of representing numbers as a number with one non-zero digit before the decimal point times ten to some power
 17. setorecision()
-
+sets the presicision of a number to be outputed to a certain number of decimal places
 18. showbase
+shows the base of a number being outputed as a prefix to that number
